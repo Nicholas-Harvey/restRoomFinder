@@ -295,10 +295,12 @@ function findClosestBathroom(theLatitude, theLongitude, array) {
         var locationLine = $("p.location:eq(" + i + ")");
         var latitudeLine = $("p.latitude:eq(" + i + ")");
         var longitudeLine = $("p.longitude:eq(" + i + ")");
+        var mapLinkLine = $("p.mapLink:eq(" + i + ")");
         var indexLine = $("p.index:eq(" + i + ")");
         locationLine.html(locationAtI);
         latitudeLine.html(latitudeAtI);
         longitudeLine.html(longitudeAtI);
+        mapLinkLine.html("<a href='https://maps.google.com/maps?q=" + latitudeLine.html() + "," + longitudeLine.html() + "'>Get Directions</a>");
         indexLine.html(indexAtI);
         for (var j = 0; j < ratingAtI; j++) {
             $("div.rating:eq(" + i + ") span.fa-star:eq(" + j + ")").addClass("checked");
