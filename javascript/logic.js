@@ -2,6 +2,8 @@
 
 $("div#addDiv").hide();
 
+
+
 $("div#allResultsDiv").hide();
 $("div#allResultsDiv div.resultsRatingsDiv").hide();
 
@@ -70,9 +72,10 @@ checkForGender();
 
 $("div#setGenderDiv button#setGenderButton").on("click", function() {
     localStorage.setItem("gender", $("select#setGenderSelect option:selected").val());
+    $("div#setGenderDiv").hide();
     console.log("gender: " + localStorage.getItem("gender"));
 });
-
+$("p.index").hide();
 // Click "add", run add function
 
 $("button#addButton").on("click", function () {
