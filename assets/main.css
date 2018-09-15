@@ -4,6 +4,11 @@ body{
     background-color: #224289;
     color: white;
 }
+
+.checked { color: orange; }
+div#addDiv {border: 1px solid black; }
+textarea { width: 95%; }
+div.resultsDiv { border: 1px solid black; }
 .jumbotron {
     margin: 5%;
     color: black;
